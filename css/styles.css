@@ -1,0 +1,121 @@
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+
+/*Keeps these objects within their parent containers*/
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+
+hr {
+    border: none;
+    height: 4px;
+    background-color: #7d97ad;
+}
+
+
+a {
+	color: #2d3c49;
+}
+
+
+p {
+	color: #2d3c49;
+}
+
+
+.name,
+.subtitle,
+.title-label {
+  font-family: "Roboto", Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #2d3c49;
+}
+
+
+.name {
+	font-weight: 100;
+	font-size: 2rem;
+}
+
+
+.subtitle {
+	font-size: .75rem;
+}
+
+
+.title-label {
+	font-size: 1.5rem;
+}
+
+
+.header-label {
+  letter-spacing: 1px;
+	color: #7d97ad;
+	font-size: 2.5rem;
+}
+
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+
+.logo {
+	width: 100%;
+  max-height: 52px;
+}
+
+
+.img-preview {
+	width: 100%;
+	margin: 0.5rem 0;
+}
+
+
+.featured-link {
+	font-size: .75rem;
+}
+
+
+.nav-spacer {
+	margin-top: 62px;
+}
+
+
+/*Small breakpoint, other code puts logo next to the name and subtitle. Justifies text right for formatting*/
+@media (min-width: 576px) {
+		.name {
+ 	text-align: right;
+	}
+
+
+	.subtitle {
+		text-align: right;
+	}
+}
+
+
+/*Medium breakpoint, makes logo, name, and subtitle bigger for better readability and look*/
+@media screen and (min-width: 768px) {
+	.name {
+		font-size: 4rem;
+	}
+
+
+	.subtitle {
+		font-size: 1rem;
+	}
+
+
+	.logo {
+		max-height: 103px;
+	}
+}

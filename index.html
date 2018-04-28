@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bryce Rairden's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Imports Bootstrap 4.0.0 and the Open Sans and Roboto fonts-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CRoboto:100,400" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- TODO: add smooth scrolling, handle offset of the nav so the headers aren't covered when the anchor link is clicked -->
+
+    <!-- Begin Navigation -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-top">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Begin Collapsable Navigation - Expands at Medium as set above -->
+      <div class="collapse navbar-collapse" id="navbar-top">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#featured">Featured Work</a>
+          </li>
+        </ul>
+      </div>
+      <!-- End Collapsable Navigation-->
+    </nav>
+    <!-- End Navigation -->
+
+    <!-- Spacer due to fixed navigation-->
+    <div class="nav-spacer">
+    </div>
+
+    <!-- Begin Header - Contains the logo, name, and subtitle -->
+    <header class="row">
+      <div class="col-12 col-sm-3">
+        <img src="img/udacity.svg" alt="Udacity Logo" class="logo">
+      </div>
+      <div class="col-12 col-sm-9 text-center">
+        <h1 class="name">Bryce Rairden</h1>
+        <h6 class="subtitle mb-0">Front-End Developer and Product Manager</h6>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <hr>
+
+    <!-- Begin Main Content -->
+    <main id="main-content">
+      <!-- Hero Image -->
+      <div id="hero-img">
+        <img srcset="img/code-510w.png 510w, img/code-690w.png 690w, img/code-930w.png 930w, img/code-1110w.png 1110w" sizes="(max-width: 767px) 510px, (max-width: 991px) 690px, (max-width: 1199px) 930px, 1110px" src="img/code-1110w.png" class="img-fluid mt-2 mb-5" alt="coding on screen">
+      </div>
+
+      <section class="container-fluid bg-3 text-center px-0">
+        <!-- Begin Featured Work, empty div for linking to nav -->
+        <div id="featured"></div>
+        <h2 class="text-left header-label px-2">Featured Work</h2>
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <img srcset="img/bryce-site-350w.png 350w, img/bryce-site-510w.png 510w, img/bryce-site-690w.png 690w" sizes="(max-width: 767px) 510px, (max-width: 991px) 690px, 350px" src="img/bryce-site-690w.png" class="img-fluid img-preview" alt="preview of brycerairden.com">
+            <p class="title-label mb-0">Portfolio</p>
+            <a href="https://codepen.io/brycerairden/pen/NYbRXz" class="featured-link">https://codepen.io/brycerairden/pen/NYbRXz</a>
+          </div>
+          <div class="col-12 col-lg-4">
+            <img srcset="img/pixel-350w.png 350w, img/pixel-510w.png 510w, img/pixel-690w.png 690w" sizes="(max-width: 767px) 510px, (max-width: 991px) 690px, 350px" src="img/pixel-690w.png" class="img-fluid img-preview" alt="preview of pixel art maker">
+            <p class="title-label mb-0">Pixel Art Maker</p>
+            <a href="https://codepen.io/brycerairden/pen/QQBYpb" class="featured-link">https://codepen.io/brycerairden/pen/QQBYpb</a>
+          </div>
+          <div class="col-12 col-lg-4">
+            <img srcset="img/mockup-to-article-350w.png 350w, img/mockup-to-article-510w.png 510w, img/mockup-to-article-690w.png 690w" sizes="(max-width: 767px) 510px, (max-width: 991px) 690px, 350px" src="img/mockup-to-article-690w.png" class="img-fluid img-preview" alt="preview of mockup to article">
+            <p class="title-label mb-0">Markup to Article</p>
+            <a href="https://codepen.io/brycerairden/pen/mpLdPb" class="featured-link">https://codepen.io/brycerairden/pen/mpLdPb</a>
+          </div>
+        </div>
+        <!-- End Featured Work -->
+      </section>
+    </main>
+    <!-- End Main Content -->
+
+  </div>
+<!-- Support JavaScript Scripts for Bootstrap 4.0 -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
